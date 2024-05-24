@@ -1,0 +1,10 @@
+
+Anladım. Ancak, hata mesajına göre, {% url_for('logout') %} ifadesini kaldırdığınız halde hala aynı hatayı alıyorsunuz. Hatayı incelediğimizde, hata mesajında logout yerine login endpointine yönlendirme yapılması öneriliyor gibi görünüyor.
+
+Bu durumda, user.html dosyasında hata olup olmadığını kontrol edelim. Belki de logout endpointine yönlendiren başka bir yer var. Eğer logout ile ilgili herhangi bir şey bulamazsak, kodumuzda başka bir yerde hata olabilir. Örneğin, app.py dosyasında yönlendirme yapılan yerleri kontrol edebiliriz.
+
+Ayrıca, Flask uygulamasını çalıştırdığınız terminal penceresindeki hata mesajlarını da kontrol etmek önemlidir. Çünkü hata mesajları genellikle daha fazla ipucu sağlar.
+
+Sorunun kaynağını daha iyi anlamak ve çözmek için user.html dosyasını ve app.py dosyasını gözden geçirin. Eğer hala yardıma ihtiyacınız varsa, dosyaların içeriğini paylaşabilir ve birlikte hatayı inceleyebiliriz.
+
+
